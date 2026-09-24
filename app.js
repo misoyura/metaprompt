@@ -86,6 +86,35 @@ function initSessionPage(currentId){
     </div>`;
 }
 
+// 메인 페이지 강의 자료 다운로드 목록을 DOWNLOADS 데이터로 렌더링
+function renderDownloads(){
+  const container = document.getElementById('download-list');
+  if (!container) return;
+
+  if (typeof DOWNLOADS === 'undefined' || DOWNLOADS.length === 0){
+    container.innerHTML = `
+      <div class="dl-group">
+        <div class="dl-row">
+          <span class="fname">📑 강의 자료</span>
+          <a class="dl-btn disabled" href="#">준비중</a>
+        </div>
+        <div class="dl-row">
+          <span class="fname">🗂 실습 파일</span>
+          <a class="dl-btn disabled" href="#">준비중</a>
+        </div>
+      </div>`;
+    return;
+  }
+
+  const rows = DOWNLOADS.flatMap(group => group.files.map(f => `
+    <div class="dl-row">
+      <span class="fname">${group.label} · ${f.name}<span class="fmeta">${f.size}</span></span>
+      <a class="dl-btn" href="${encodeURI(f.href)}" download>다운로드</a>
+    </div>`)).join('');
+
+  container.innerHTML = `<div class="dl-group">${rows}</div>`;
+}
+
 // 메인 페이지 공통 초기화: 로고·강사·목차 카드·푸터를 데이터로 채움
 function initIndexPage(){
   document.querySelectorAll('.logo').forEach(el => el.textContent = COURSE.name);
@@ -94,6 +123,7 @@ function initIndexPage(){
   if (meta) meta.innerHTML = `강사 <b>${COURSE.instructor}</b>`;
 
   renderSessionGrid();
+  renderDownloads();
 
   const footer = document.getElementById('site-footer');
   if (footer) footer.innerHTML = `

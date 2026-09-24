@@ -27,3 +27,17 @@ const SESSIONS = [
     ],
   },
 ];
+
+// 강의 자료 다운로드 목록 (메인 페이지 "강의 자료 다운로드" 섹션에서 자동 렌더링됨).
+// href는 이 사이트 파일들과 같은 위치에 올려둔 실제 파일 경로입니다.
+const DOWNLOADS = [
+  {
+    session: 1,
+    label: "1차시 실습 자료",
+    files: [
+      { name: "전주 1박 2일 우정 여행 브리핑 — Gem·Canvas 실습 결과 (PPTX)", href: "전주 1박 2일 우정 여행 브리핑.pptx", size: "1.2MB" },
+      { name: "청년 주거 정책 조사 — Deep Research 실습 결과 (DOCX)", href: "청년 주거 정책 조사.docx", size: "2.9MB" },
+      { name: "청년 주거 지원 정책 종합 분석 — Deep Research·Canvas 실습 결과 (PPTX)", href: "청년 주거 지원 정책 종합 분석.pptx", size: "0.4MB" },
+    ],
+  },
+];
