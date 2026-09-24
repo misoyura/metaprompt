@@ -33,6 +33,13 @@ const SESSIONS = [
 const DOWNLOADS = [
   {
     session: 1,
+    label: "1차시 강의 교안",
+    files: [
+      { name: "프롬프트 리터러시 강의 교안 — 교육생용 (PDF)", href: "선문대_프롬프트리터러시_교육생0924.pdf", size: "4.9MB" },
+    ],
+  },
+  {
+    session: 1,
     label: "1차시 실습 자료",
     files: [
       { name: "전주 1박 2일 우정 여행 브리핑 — Gem·Canvas 실습 결과 (PPTX)", href: "전주 1박 2일 우정 여행 브리핑.pptx", size: "1.2MB" },
