@@ -22,7 +22,6 @@ const SESSIONS = [
       { href: "#part3", label: "3 메타프롬프트" },
       { href: "#part4", label: "4 Gemini 실전" },
       { href: "#part5", label: "5 검증" },
-      { href: "#part6", label: "6 종합 실습" },
       { href: "#part7", label: "7 마무리" },
     ],
   },
