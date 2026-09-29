@@ -44,6 +44,19 @@
           <tr><td><strong>7</strong></td><td>마무리 : 보안·윤리 수칙과 Q&amp;A</td></tr>
         </tbody>
       </table>
+      <div class="box tip">
+        <span class="box-title">🔗 참여 링크</span>
+        패들렛 : <a href="https://bit.ly/meta_sunmun" target="_blank" rel="noopener">bit.ly/meta_sunmun</a> · 오늘 강의 자료 사이트 : <a href="https://misoyura.github.io/metaprompt/" target="_blank" rel="noopener">misoyura.github.io/metaprompt</a>
+      </div>
+
+      <h3>실습 준비 : AI 3종 탭 열기</h3>
+      <ol class="steps">
+        <li><b>노트북 전원과 와이파이 확인</b></li>
+        <li><b>ChatGPT · Gemini · Claude에 로그인하고 탭 3개 열기</b></li>
+        <li><b>ChatGPT · Gemini · Claude에 개인정보보호를 위한 환경설정</b></li>
+        <li><b>학교계정보다는 개인계정을 사용</b></li>
+        <li><b>개인정보·학번은 입력하지 않기</b><span>비교 실습은 임시 채팅으로 (다음 3장)</span></li>
+      </ol>
 
       <h3>우리는 AI의 어느 시점에 살고 있나</h3>
       <table class="table">
@@ -106,14 +119,10 @@
         "ChatGPT를 사용한 것 자체가 문제가 아니라, AI가 만들어낸 판례가 실제 존재하는지 변호사가 확인하지 않고 법원에 제출한 것이 문제였다"는 사건입니다.
       </div>
 
-      <h3>실습 준비 : AI 3종 탭 열기</h3>
-      <ol class="steps">
-        <li><b>노트북 전원과 와이파이 확인</b></li>
-        <li><b>ChatGPT · Gemini · Claude에 로그인하고 탭 3개 열기</b></li>
-        <li><b>ChatGPT · Gemini · Claude에 개인정보보호를 위한 환경설정</b></li>
-        <li><b>학교계정보다는 개인계정을 사용</b></li>
-        <li><b>개인정보·학번은 입력하지 않기</b><span>비교 실습은 임시 채팅으로 (아래 3장 참고)</span></li>
-      </ol>
+      <div class="box note">
+        <span class="box-title">📌 오늘 우리가 배울 두 가지</span>
+        AI를 쓰는 게 문제가 아니라, 확인하지 않고 그대로 믿는 게 문제! 오늘은 ① 질문을 잘 만드는 법, ② 결과를 확인하는 법, 이 두 가지를 계속 오가면서 배운다. 이제 본격적으로 시작한다.
+      </div>
 
       <h3>기본 설정 ① ② ③ : ChatGPT · Gemini · Claude</h3>
       <table class="table">
@@ -324,7 +333,7 @@
       </div>
       <div class="box tip">
         <span class="box-title">💡 TIP</span>
-        V1 → V2 순서로 같은 AI에 입력하고, V0 결과와 비교한다. ChatGPT·Claude 각각 새로운 채팅창에서 (임시창에 하면 대화기록에 안 남아서 나중에 못 봄).
+        V1 → V2 순서로 같은 AI에 입력하고, V0 결과와 비교한다. ChatGPT·Claude 각각 새로운 채팅창에서 (임시창에 하면 대화기록에 안 남아서 나중에 확인 불가).
       </div>
       <div class="box warn">
         <span class="box-title">⚠ 주의</span>
@@ -334,12 +343,12 @@
       <h3>실습 2-2 · 역할 한 줄을 넣으면? <span class="muted">실습 · 2분</span></h3>
       <div class="prompt">
         <div class="prompt-head">
-          <span class="label">역할 한 줄</span>
+          <span class="label">역할 한 줄 (V2-R)</span>
           <button class="copy-btn" onclick="copyPrompt(this)">복사</button>
         </div>
-        <pre>너는 대학생 진로·취업 전문가야.</pre>
+        <pre>너는 대학생 진로·취업 전문가야. 나는 선문대 3학년이고, 교양 보고서(A4 2장)에 '취업 준비 비용 부담을 줄이는 방법'을 쓴다. 지금은 자료조사 단계다. 국내 자료를 바탕으로 ① 비용 항목별 현황 ② 대학생이 쓸 수 있는 무료·저비용 지원제도를 정리해줘. 각 정보에 출처, 조사 시점, 확실도(확인됨/추정/모름)를 표시하고, 정보가 부족하면 먼저 질문해줘.</pre>
       </div>
-      <p class="muted">V2 프롬프트 맨 앞에 이 한 줄만 추가해서 같은 AI에 입력한다. V2와 V2-R, 어느 쪽이 더 나은지 표에 기록한다.</p>
+      <p class="muted">V2 프롬프트 맨 앞에 "너는 대학생 진로·취업 전문가야." 한 줄만 추가해서 같은 AI에 입력한다. V2와 V2-R, 어느 쪽이 더 나은지 표에 기록한다.</p>
       <table class="table">
         <thead><tr><th>비교 항목</th><th>V2</th><th>V2-R</th></tr></thead>
         <tbody>
@@ -370,7 +379,7 @@
       </div>
       <div class="box tip">
         <span class="box-title">💡 TIP</span>
-        한 번에 다 시키지 않고, 단계마다 멈추고 확인한다. 이어서 V2-R 채팅창에서.
+        한 번에 다 시키지 않고, 단계마다 멈추고 확인한다.
       </div>
     </section>
 
@@ -857,7 +866,7 @@
 
       <h3>보고서를 슬라이드(PPT)로 : Canvas</h3>
       <ol class="steps">
-        <li><b>1. Canvas 선택</b><span>입력창의 도구(+ 메뉴)에서 Canvas를 선택한다</span></li>
+        <li><b>1. Canvas 선택</b><span>새로운 대화창의 입력창에서 도구(+ 메뉴)에서 Canvas를 선택하고, 보고서 파일을 첨부한다</span></li>
         <li><b>2. 발표 자료 요청</b><span>보고서 내용을 바탕으로 슬라이드를 만들어 달라고 요청한다</span></li>
         <li><b>3. 말로 고치기</b><span>장 순서·문장·색상을 말로 수정 요청한다</span></li>
         <li><b>4. 내보내기</b><span>Google 슬라이드로 내보내고, 필요하면 PPT 파일로 저장한다</span></li>
